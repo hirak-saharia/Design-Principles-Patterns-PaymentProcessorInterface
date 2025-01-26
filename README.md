@@ -35,5 +35,5 @@ The `PaymentProcessorInterface` interface is simple and focused, requiring only 
 ### 9. **Dependency Inversion Principle (DIP)**:
 High-level modules (like `processing_order`) should not depend on low-level modules (like `ProcessingByPayPall` or `ProcessingByStripe`). Both should depend on abstractions (`PaymentProcessorInterface`). This is achieved by passing a `PaymentProcessorInterface` instance to the `processing_order` function.
 
-### Summary:
+### Conclusion:
 This design leverages several key object-oriented principles and design patterns to create a flexible, maintainable, and scalable payment processing system. By using abstraction, encapsulation, polymorphism, and dependency injection, the code is well-structured and adheres to SOLID principles, making it easy to extend and maintain.
